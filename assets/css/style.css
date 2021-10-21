@@ -67,6 +67,12 @@ h6 {
     text-transform: capitalize;
 }
 
+/* All text class */
+.text {
+    margin: 0.6rem 0;
+    opacity: 0.8;
+}
+
 /* Header text */
 .center {
     display: flex;
@@ -368,6 +374,7 @@ section {
     opacity: 0.7;
 }
 
+/* Team profile section */
 /* Team */
 .team .row {
     margin-top: 2rem;
@@ -431,6 +438,46 @@ section {
     opacity: 0.7;
 }
 
+/* FAQ section */
+.faq {
+    background: #f9f9f9;
+}
+
+.faq .row {
+    margin-top: 2rem;
+}
+
+.faq-item {
+    margin: 0.6rem 0;
+}
+
+.faq-head {
+    background: var(--white-smoke);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.2rem 1.8rem;
+}
+
+.faq-head h3 {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.faq-content {
+    background: #fff;
+    overflow: hidden;
+    height: 0;
+    padding: 0rem 1.8rem;
+    transition: var(--transition);
+}
+
+.show-faq-content {
+    height: 168px;
+    padding: 0.6rem 1.8rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     /* Detail */
@@ -459,6 +506,14 @@ section {
     .team-item {
         margin: 0;
     }
+
+    /* FAQ section */
+    .faq .row {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
