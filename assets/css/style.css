@@ -478,6 +478,208 @@ section {
     padding: 0.6rem 1.8rem;
 }
 
+/* Pricing section */
+.pricing .row {
+    margin-top: 2rem;
+}
+
+.pricing-item {
+    border: 2.5px solid #f9f9f9;
+    text-align: center;
+    padding: 3.4rem 0;
+    margin: 2rem 0;
+}
+
+/* Pricing text */
+.pricing-item h2 {
+    color: var(--night-rider);
+    opacity: 0.7;
+    font-size: 1.5rem;
+}
+
+.pricing-item .price {
+    padding: 1.5rem 0 1rem 0;
+    line-height: 1.1;
+}
+
+.pricing-item .price span {
+    display: block;
+}
+
+.pricing-item .price span:first-child {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    color: var(--mount-meadow);
+}
+
+.pricing-item .price span:last-child {
+    font-size: 0.85rem;
+    letter-spacing: 1;
+    font-weight: 500;
+}
+
+.pricing-item ul li {
+    padding: 0.8rem 0;
+    opacity: 0.7;
+}
+
+/* Testimonial section */
+/* Background image */
+.testimonial {
+    background-image: linear-gradient(rgba(27, 188, 156, 0.8), rgba(27, 188, 156, 0.9)), url(https://images.pexels.com/photos/430207/pexels-photo-430207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Testimonial text */
+.testimonial .title h2,
+.testimonial .title {
+    color: #fff;
+}
+
+/* Testimonial items */
+.testimonial .row {
+    margin-top: 2rem;
+}
+
+/* Avatar image box*/
+.testimonial-img {
+    border: 4px solid #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 2.5rem auto;
+    padding: 0.5rem;
+}
+
+/* Image */
+.testimonial-img img {
+    border-radius: 50%;
+}
+
+.testimonial-item {
+    text-align: center;
+}
+
+/* Text */
+.testimonial-item p {
+    font-size: 1.3rem;
+    color: var(--white-smoke);
+    line-height: 1.7;
+}
+
+.testimonial-item span {
+    margin-top: 0.7rem;
+    display: block;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Contact section */
+.contact .row {
+    margin-top: 2rem;
+}
+
+/* Contact left, right */
+.contact .row > div {
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+/* Contact text */
+.contact .row > div h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Left input box */
+.contact-left form input,
+.contact-left form textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-bottom: 1.5px solid #f0f0f0;
+    outline: 0;
+}
+
+/* Placeholder */
+.contact-left form input::placeholder,
+.contact-left form textarea::placeholder {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Focus */
+.contact-left form input:focus,
+.contact-left form textarea:focus {
+    border-color: var(--night-rider);
+}
+
+/* Button */
+.submit-btn {
+    margin: 1rem 0;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--mount-meadow);
+    opacity: 0.9;
+    padding: 0.8rem 3.4rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+/* Hover */
+.submit-btn:hover {
+    background: var(--black);
+}
+
+/* Right box */
+.contact-right div {
+    margin: 2rem 0;
+}
+
+/* Footer section */
+.footer {
+    text-align: center;
+    background: var(--black);
+    color: var(--white-smoke);
+    padding: 2rem 0;
+    height: 50vh;
+}
+
+/* Footer text */
+.footer .text {
+    opacity: 0.8;
+}
+
+/* SNS icon */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.footer-links a {
+    color: var(--white-smoke);
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    margin: 0 0.4rem;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    background: var(--mount-meadow);
+}
+
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
     /* Detail */
@@ -514,11 +716,38 @@ section {
         margin-right: auto;
     }
 
+    /* Pricing */
+    .pricing .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .pricing-item {
+        margin: 0;
+    }
+
+    /* Testimonial text */
+    .testimonial-item p {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contact section */
+    .contact .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .contact-right > div:first-child {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 992px) {
-
     /* Header */
+    /* Navbar */
     .navbar {
         background: transparent;
         margin-top: 1.4rem;
@@ -586,7 +815,7 @@ section {
         color: var(--night-rider);
     }
 
-    /* feature */
+    /* feature section */
     .feature .row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -602,13 +831,35 @@ section {
 }
 
 @media screen and (min-width: 1200px) {
+    /* Hero Text */
     .hero-div h1 {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
 
+    /* Detail section */
     .detail .row {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* Pricing section */
+    .pricing .row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Testimonial text */
+    .testimonial-item p {
+        width: 60%;
+    }
+
+    /* Contact section */
+    .contact .row {
+        column-gap: 4rem;
+    }
+
+    .contact-right {
+        padding-left: 4rem !important;
+    }
+
 }
