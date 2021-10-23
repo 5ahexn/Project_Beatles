@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     // Sample video popup
     $(document).ready(function () {
-        $('.popup-youtube').magnificPopup({
+        $('.popup-video').magnificPopup({
             disableOn: 700,
             type: 'iframe',
             mainClass: 'mfp-fade',
@@ -28,8 +28,164 @@ $(document).ready(function () {
         });
     });
 
-    // Team carousel
-    $('.team .owl-carousel').owlCarousel({
+    $(document).ready(function () {
+        $('.popup-video1').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video2').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video3').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video4').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video5').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video6').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video7').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video8').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video9').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video10').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video11').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video12').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    $(document).ready(function () {
+        $('.popup-video13').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    // Albums carousel
+    $('.albums .owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         autoplay: true,

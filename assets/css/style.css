@@ -159,7 +159,6 @@ section {
 } */
 
 .navbar-brand img {
-    /* filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(359deg) brightness(103%) contrast(102%); */
     height: 47px;
 }
 
@@ -263,12 +262,12 @@ section {
     color: #fff;
 }
 
-/* Detail section */
-.detail {
+/* News section */
+.news {
     background: var(--white-smoke);
 }
 
-.detail-item {
+.news-item {
     background: #fff;
     text-align: center;
     -webkit-box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
@@ -284,7 +283,7 @@ section {
     transition: var(--transition);
 }
 
-.detail-item:hover {
+.news-item:hover {
     -webkit-box-shadow: 0 21px 19px -2px rgba(217, 217, 217, 1);
     -moz-box-shadow: 0 21px 19px -2px rgba(217, 217, 217, 1);
     box-shadow: 0 21px 19px -2px rgba(217, 217, 217, 1);
@@ -295,17 +294,17 @@ section {
     transform: translateY(-5px);
 }
 
-.detail-item span {
+.news-item span {
     font-size: 2.5rem;
 }
 
-.detail-item h2 {
+.news-item h2 {
     font-size: 1.4rem;
     opacity: 0.8;
     font-weight: 300;
 }
 
-.line {
+.news-item .line {
     width: 45px;
     margin: 1.2rem auto;
     background: var(--mount-meadow);
@@ -365,7 +364,7 @@ section {
     text-align: center;
 }
 
-/* YouTube video */
+/* Video text */
 .video a {
     font-size: 2.2rem;
     color: #fff;
@@ -393,23 +392,23 @@ section {
     opacity: 0.7;
 }
 
-/* Team profile section */
-/* Team */
-.team .row {
+/* Albums profile section */
+/* Albums */
+.albums .row {
     margin-top: 2rem;
 }
 
-.team-item {
+.albums-item {
     margin: 2rem 0;
 }
 
-/* Team image */
-.team-img {
+/* Albums image */
+.albums-img {
     position: relative;
 }
 
-/* Team icon */
-.team-icons {
+/* Albums icon */
+.albums-icons {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -420,8 +419,8 @@ section {
     transition: var(--transition);
 }
 
-/* Team SNS */
-.team-icons a {
+/* Albums SNS */
+.albums-icons a {
     color: var(--night-rider);
     width: 50px;
     height: 50px;
@@ -429,28 +428,28 @@ section {
 }
 
 /* Icon hover */
-.team-icons a:hover {
+.albums-icons a:hover {
     background: var(--mount-meadow);
     color: #fff;
 }
 
-.team-img:hover .team-icons {
+.albums-img:hover .albums-icons {
     opacity: 1;
 }
 
-/* Team text */
-.team-info {
+/* Albums text */
+.albums-info {
     text-align: center;
     padding: 1.5rem;
     line-height: 1;
 }
 
-.team-info h3 {
+.albums-info h3 {
     font-size: 1.4rem;
     color: var(--night-rider);
 }
 
-.team-info span{
+.albums-info span{
     font-size: 0.85rem;
     letter-spacing: 1px;
     font-weight: 500;
@@ -729,14 +728,14 @@ section {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-    /* Detail */
-    .detail .row {
+    /* News */
+    .news .row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
-    .detail-item {
+    .news-item {
         margin: 0;
     }
 
@@ -751,8 +750,8 @@ section {
         margin: 0 auto;
     }
 
-    /* Team section */
-    .team-item {
+    /* Albums section */
+    .albums-item {
         margin: 0;
     }
 
@@ -810,7 +809,11 @@ section {
     .navbar-brand {
         color: var(--white-smoke);
         font-size: 2rem;
-    }    
+    }
+
+    .navbar-brand{
+        filter: invert(99%) sepia(4%) saturate(401%) hue-rotate(213deg) brightness(112%) contrast(88%);
+    }
 
     /* Icon */
     .navbar-toggler {
@@ -858,6 +861,10 @@ section {
         color: var(--night-rider);
     }
 
+    .cng-navbar .navbar-brand img {
+        filter: inherit;
+    }
+    
     .cng-navbar .nav-link {
         color: var(--night-rider);
     }
@@ -886,7 +893,7 @@ section {
     }
 
     /* Detail section */
-    .detail .row {
+    .news .row {
         grid-template-columns: repeat(3, 1fr);
     }
 
