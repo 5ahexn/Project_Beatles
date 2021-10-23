@@ -71,5 +71,5 @@ $(document).ready(function () {
         nav: false,
         items: 1
     });
-    
+
 });
