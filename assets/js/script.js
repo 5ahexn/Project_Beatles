@@ -219,8 +219,8 @@ $(document).ready(function () {
         });
     });
 
-    // Testimonial carousel
-    $('.testimonial .owl-carousel').owlCarousel({
+    // Member carousel
+    $('.member .owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
         dots: true,
