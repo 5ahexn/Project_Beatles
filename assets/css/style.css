@@ -496,6 +496,7 @@ section {
     padding: 0.6rem 1.8rem;
     text-indent: 10px;
     word-wrap: break-word;
+    word-spacing: 0.125rem;
     overflow-y: scroll;
 }
 
