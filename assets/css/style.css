@@ -116,7 +116,7 @@ section {
 
 /* Header section */
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../image/members/Abbey-Road.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(https://wallsdesk.com/wp-content/uploads/2016/10/The-Beatles-Wallpaper-.jpg);
     min-height: 100vh;
     background-position: center;
     -webkit-background-size: cover;
